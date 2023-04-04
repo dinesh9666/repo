@@ -1,0 +1,10 @@
+FROM: centos
+RUN: opt/tomcat/
+MKDIR: /tomcat/bin
+RUN: www.http://apachitomcat.download///
+RUN: tar -xvzf apachetomcat
+ENVIRNOMENT: opt/bin
+EXPOSE:80
+CMD: catalina "sh run tomcat server"
+CMD: PING
+ENTRYPOINY:192.121.12.3
